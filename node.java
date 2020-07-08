@@ -18,10 +18,8 @@ public class node {
     }
 
     void print() {
-        if (this.next == null) {
-            System.out.println(this.value);
-        } else {
-            System.out.println(this.value);
+        System.out.println(this.value);
+        if (this.next != null) {
             this.next.print();
         }
     }
