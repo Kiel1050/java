@@ -21,5 +21,7 @@ public class main {
         n2.next = n3;
         n3.next = n4;
         n1.print();
+        n1.reverse();
+        n4.print();
     }
 }

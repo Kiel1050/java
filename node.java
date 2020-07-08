@@ -25,4 +25,15 @@ public class node {
             this.next.print();
         }
     }
+
+    void reverse() {
+        node next = this.next;
+        node head = this;
+        while (this.next != null) {
+            this.next = next.next;
+            next.next = head;
+            head = next;
+            next = this.next;
+        }
+    }
 }
